@@ -25,6 +25,8 @@ This will be based on the popular classic game Battleship. However, there will b
 
 Include images of your wireframes.
 
+https://imgur.com/a/mISXJ
+
 ## Priority Matrix
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  

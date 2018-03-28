@@ -11,7 +11,7 @@ This schedule will be used to keep track of your progress throughout the week an
 |Day 3: Thur| Basic Clickable Model |
 |Day 4: Fri| Working Prototype |
 |Day 5: Sat| Final Working Project |
-|Day 6: Sun| Bugs / Stylying / PostMVP |
+|Day 6: Sun| Bugs / Styling / PostMVP |
 |Day 7: Mon| Project Presentations |
 
 
@@ -19,7 +19,7 @@ This schedule will be used to keep track of your progress throughout the week an
 
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
-This will be based on the popular classic game Battleship. However, there will be a spin on it. For the theme, it will be Star Wars based. Instead of sea based ships, it will be starships. Instead of water, it will be space and asteroids. Besides the asthetic, the game mechanics will be the same.
+This will be based on the popular classic game Battleship. However, there will be a spin on it. For the theme, it will be Star Wars based. Instead of sea based ships, it will be starships. Instead of water, it will be space and asteroids. Besides the aesthetic, the game mechanics will be the same.
 
 ## Wireframes
 
@@ -29,7 +29,7 @@ https://imgur.com/a/mISXJ
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
+Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  
 
 [+] Ship placement function (described in detail below in 'Game Initialization')
 [+] How to identify the current user turn
@@ -141,7 +141,7 @@ What does it look like when the game ends, what determines winning or losing?
 —End Of Game—
 
 IF WIN
-[+] If you successfully sing your opponents entire fleet, then an alert will populate to inform you of your win.
+[+] If you successfully sink your opponents entire fleet, then an alert will populate to inform you of your win.
 [+] Game play will cease.
 [+] The entire board will be revealed, to show the position of the remaining ships.
 
@@ -152,6 +152,8 @@ IF LOSS
 
 ### Game Reset
 How will the user restart the game once it has been completed.
+
+[+] There is a Restart button on the home splash screen.
 
 ## MVP
 
@@ -170,11 +172,11 @@ Include the full list of features that you are considering for POST MVP
 [+] a scoreboard to recode the top player scores
 ## Functional Components
 
-Based on the initial logic defined in the previous game phases section try and breakdown the logic further into functional components, and by that we mean functions.  Does your logic indicate that code could be encapsulated for the purpose of reusablility.  Once a function has been defined it can then be incorporated into a class as a method.
+Based on the initial logic defined in the previous game phases section try and breakdown the logic further into functional components, and by that we mean functions.  Does your logic indicate that code could be encapsulated for the purpose of reusability.  Once a function has been defined it can then be incorporated into a class as a method.
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted.
+Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evaluate game possibilities based on time needed and the actual time you have before game must be submitted.
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Component 1 | H | 10hrs| 12hrs | 12hrs |
 | Total |  | 10hrs| 12hrs | 12hrs |
@@ -185,14 +187,14 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Sprites)| L | 3 | :---: | :---: |
 
 ## Helper Functions
-Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
+Helper functions should be generic enough that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
 
 | Function | Description |
 | --- | :---: |  
 | Capitalize | This will capitalize the first letter in a string |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project.
+ Use this section to list all supporting libraries and their role in the project.
 
 ## Code Snippet
 

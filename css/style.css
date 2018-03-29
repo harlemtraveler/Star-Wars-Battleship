@@ -46,7 +46,7 @@ footer {
 .field {
   background-color: #cccccc;
   position: absolute;
-  height: 400px;
+  height: 416px;
   width: 416px;
   display: grid;
   grid-template-columns: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -64,4 +64,13 @@ footer {
   height: 50px;
   width: 50px;
   border: 1px solid black;
+}
+
+.battleship {
+  height: 50px;
+  width: 150px;
+}
+
+.ship {
+  background-color: yellow;
 }

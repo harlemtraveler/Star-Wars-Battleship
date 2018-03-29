@@ -1,0 +1,67 @@
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: grey;
+  height: 100px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+footer {
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  clear: both;
+  margin-bottom: 0;
+}
+
+.column-square {
+ height: 100px;
+ width: 100px;
+ background-color: #cccccc;
+ position: relative;
+ border: 1px solid black;
+ background-image: url('https://previews.123rf.com/images/patrimonio/patrimonio1205/patrimonio120500015/13541995-illustration-of-a-warship-battleship-boat-ship-with-big-guns-viewed-from-a-low-angle-cartoon-style.jpg');
+ background-size: 100px;
+}
+
+.container {
+ border: 4px;
+ background-color: #cccccc;
+ height: 400px;
+ width: 100px;
+ position: absolute;
+}
+
+.right-column {
+  right: 0px;
+}
+
+.field {
+  background-color: #cccccc;
+  position: absolute;
+  height: 400px;
+  width: 416px;
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.fieldOne {
+  left: 200px;
+}
+
+.fieldTwo {
+  right: 200px;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+}

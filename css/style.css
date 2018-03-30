@@ -1,15 +1,27 @@
 body {
   margin: 0px;
+  background-image: url('https://cdn.pixabay.com/photo/2016/05/02/10/13/ship-1366926__480.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
-  background-color: grey;
+  background-color: #008B8B;
   height: 100px;
+  opacity: 0.5;
 }
 
 h1 {
   font-size: 50px;
   margin-top: 0px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
   text-align: center;
 }
 
@@ -20,6 +32,43 @@ footer {
   clear: both;
   margin-bottom: 0;
 }
+
+.player-name, .score-board {
+  height: 100px;
+  width: 100px;
+  background-color: #008B8B;
+  border: 1px solid black;
+  color: black;
+}
+
+.player-one {
+  float: left;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.player-two {
+  float: right;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.score-board-one {
+  float: left;
+  position: absolute;
+  left: 100px;
+  top: 0px;
+}
+
+.score-board-two {
+  float: right;
+  position: absolute;
+  right: 100px;
+  top: 0px;
+}
+
 
 .column-square {
  height: 100px;
@@ -44,12 +93,12 @@ footer {
 }
 
 .field {
-  background-color: #cccccc;
   position: absolute;
   height: 416px;
   width: 416px;
   display: grid;
   grid-template-columns: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  opacity: 0.5;
 }
 
 .fieldOne {
@@ -72,5 +121,9 @@ footer {
 }
 
 .ship {
+  background-color: yellow;
+}
+
+.ship-two {
   background-color: yellow;
 }

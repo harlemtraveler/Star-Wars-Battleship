@@ -8,7 +8,7 @@ const aircraftCarrier = 3;
 const vessels = [cruiser, cruiser, cruiser, battleship, battleship, aircraftCarrier];
 let playerOneScore = 0;
 let playerTwoScore = 0;
-let playerTurn = 3;
+let playerTurn = 0;
 
 const fieldOne = $('.fieldOne');
 const fieldTwo = $('.fieldTwo');
@@ -43,7 +43,7 @@ createFieldTwo();
 //currently turns square grey to represent misses.
 $('.square').click(function() {
   $(this).css('background-color', 'grey');
-  playerTurn++;
+  //playerTurn++;
 })
 
 
@@ -57,14 +57,14 @@ $('.square').click(function(e) {
     $(this).css('background-color', 'red');
     playerTwoScore += 1;
     $('.second').html(playerTwoScore);
-    playerTurn++;
+    //playerTurn++;
   }
   else if ($(this).hasClass('ship-two')) {
     alert('Direct hit!');
     $(this).css('background-color', 'red');
     playerOneScore += 1;
     $('.first').html(playerOneScore);
-    playerTurn++;
+    //playerTurn++;
   }
 });
 
@@ -166,14 +166,17 @@ function setBoard() {
     }
   }
 };
-
+/*
 //This will be the primary function to start and play the game.
 function whoseTurn() {
   //let playerTurn = 0;
+  playerTurn += 1;
   if (playerTurn % 2 === 0) {
     console.log('test1');
-    alert('Player 2, Your turn. Choose a target!');
-    $(document).on('click', function(e) {
+    console.log(playerTurn);
+    //alert('Player 2, Your turn. Choose a target!');
+    $('h1').html('Player 2, Your turn. Choose a target!');
+    $('.square').on('click', function(e) {
       if($(e.target).is('.square')) {
         //playerTurn += 1;
         whoseTurn();
@@ -183,8 +186,12 @@ function whoseTurn() {
   }
   else if (playerTurn % 2 !== 0) {
     console.log('test2');
-    alert('Player 1 Your turn. Choose a target!');
-    $(document).on('click', function(e) {
+    console.log(playerTurn);
+    //alert('Player 1 Your turn. Choose a target!');
+    $('h1').html('Player 1, Your turn. Choose a target!');
+    console.log('test3');
+    console.log(playerTurn);
+    $('.square').on('click', function(e) {
       if($(e.target).is('.square')) {
         //playerTurn += 1;
         whoseTurn();
@@ -193,6 +200,34 @@ function whoseTurn() {
     })
   }
 };
+*/
+
+function whoseTurn() {
+  playerTurn += 1;
+  if (playerTurn % 2 === 0) {
+    $('h1').html('Player 2, Your turn. Choose a target!');
+    $('.square').on('click', function(e) {
+      if($(e.target).is('.square')) {
+        console.log('test1');
+        whoseTurn();
+      }
+    })
+  }
+  else if (playerTurn % 2 !== 0) {
+    $('h1').html('Player 1, Your turn. Choose a target!');
+    $('.square').on('click', function(e) {
+      if($(e.target).is('.square')) {
+        console.log('test2');
+        whoseTurn();
+      }
+    })
+  }
+}
+
+
+
+
+
 
 function startGame() {
   setBoard();
